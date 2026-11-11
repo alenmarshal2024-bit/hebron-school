@@ -8,6 +8,6 @@ async function getPool(){
 export async function handler(event){
   try {
     const db=await getPool();
-    return await handleApi({method:event.httpMethod,path:event.path,headers:event.headers,body:event.body||''},db);
+    return await handleApi({method:event.httpMethod,path:event.path,headers:event.headers,body:event.body||'',db});
   } catch (e) {console.error('Netlify function not ready',e?.message);return {statusCode:503,headers:{'Content-Type':'application/json'},body:JSON.stringify({error:'School database unavailable; check Neon and hosting configuration'})}}
 }
