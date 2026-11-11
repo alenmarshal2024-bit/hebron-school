@@ -1,0 +1,23 @@
+{
+  "name": "hebron-school-neon-ready",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Hebron School staff and student records, Neon's Postgres database and Netlify server functions",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test",
+    "db:migrate": "node --env-file=.env.local scripts/migrate.mjs",
+    "db:bootstrap": "node --env-file=.env.local scripts/bootstrap.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.13.3",
+    "@neon/config": "^1.13.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
