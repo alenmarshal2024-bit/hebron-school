@@ -1,0 +1,157 @@
+
+> hebron-school-neon-ready@0.3.0 check
+> npm run build && npm test
+
+
+> hebron-school-neon-ready@0.3.0 build
+> node scripts/build.mjs
+
+✓ Build created dist/ (real UI + fictional preview)
+✓ 7 JavaScript syntax checks passed
+✓ Backend runs in Netlify Functions; no server keys included in dist/
+
+> hebron-school-neon-ready@0.3.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: RFC-like CSV parser accepts escaped commas, quotes and line breaks
+ok 1 - RFC-like CSV parser accepts escaped commas, quotes and line breaks
+  ---
+  duration_ms: 2.790855
+  type: 'test'
+  ...
+# Subtest: CSV aliases and UTF8 BOM supported
+ok 2 - CSV aliases and UTF8 BOM supported
+  ---
+  duration_ms: 0.440166
+  type: 'test'
+  ...
+# Subtest: CSV row validation reports bad data instead of importing
+ok 3 - CSV row validation reports bad data instead of importing
+  ---
+  duration_ms: 0.563487
+  type: 'test'
+  ...
+# Subtest: CSV rejects malicious/invalid identifiers and phone
+ok 4 - CSV rejects malicious/invalid identifiers and phone
+  ---
+  duration_ms: 0.15673
+  type: 'test'
+  ...
+# Subtest: Fee parsing stores exact integer paise
+ok 5 - Fee parsing stores exact integer paise
+  ---
+  duration_ms: 18.954543
+  type: 'test'
+  ...
+# Subtest: Financial balance excludes reversed payments
+ok 6 - Financial balance excludes reversed payments
+  ---
+  duration_ms: 0.275464
+  type: 'test'
+  ...
+# Subtest: Password hashing, verification and unique random credentials
+ok 7 - Password hashing, verification and unique random credentials
+  ---
+  duration_ms: 269.506495
+  type: 'test'
+  ...
+# Subtest: Normalize staff email and secure cookie
+ok 8 - Normalize staff email and secure cookie
+  ---
+  duration_ms: 0.731934
+  type: 'test'
+  ...
+# Subtest: Permissions exclude teachers from financial transactions
+ok 9 - Permissions exclude teachers from financial transactions
+  ---
+  duration_ms: 0.638587
+  type: 'test'
+  ...
+# Subtest: API health works with a mock database
+ok 10 - API health works with a mock database
+  ---
+  duration_ms: 2.237263
+  type: 'test'
+  ...
+# Subtest: Netlify function prefix resolves route correctly
+ok 11 - Netlify function prefix resolves route correctly
+  ---
+  duration_ms: 0.296335
+  type: 'test'
+  ...
+# Subtest: Unauthenticated API requests rejected
+ok 12 - Unauthenticated API requests rejected
+  ---
+  duration_ms: 0.360268
+  type: 'test'
+  ...
+# Subtest: Cross-origin POST blocked before parsing
+ok 13 - Cross-origin POST blocked before parsing
+  ---
+  duration_ms: 0.132494
+  type: 'test'
+  ...
+# Subtest: Teacher cannot invite other staff
+ok 14 - Teacher cannot invite other staff
+  ---
+  duration_ms: 0.205912
+  type: 'test'
+  ...
+# Subtest: Teacher cannot create fee payments
+ok 15 - Teacher cannot create fee payments
+  ---
+  duration_ms: 0.147427
+  type: 'test'
+  ...
+# Subtest: Only assigned class teacher may change student observations
+ok 16 - Only assigned class teacher may change student observations
+  ---
+  duration_ms: 0.340179
+  type: 'test'
+  ...
+# Subtest: Principal preview flags invalid CSV rows and preserves row numbers
+ok 17 - Principal preview flags invalid CSV rows and preserves row numbers
+  ---
+  duration_ms: 0.413326
+  type: 'test'
+  ...
+# Subtest: Package does not publish private credentials or env files
+ok 18 - Package does not publish private credentials or env files
+  ---
+  duration_ms: 16.981399
+  type: 'test'
+  ...
+# Subtest: Valid login issues HttpOnly session and never returns password hash
+ok 19 - Valid login issues HttpOnly session and never returns password hash
+  ---
+  duration_ms: 88.389157
+  type: 'test'
+  ...
+# Subtest: Posting payments needs accountant role and server stores paise with an idempotency key
+ok 20 - Posting payments needs accountant role and server stores paise with an idempotency key
+  ---
+  duration_ms: 0.93362
+  type: 'test'
+  ...
+# Subtest: Principal can prepare a staff invitation but it is not secretly emailed
+ok 21 - Principal can prepare a staff invitation but it is not secretly emailed
+  ---
+  duration_ms: 38.89358
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 512.678256
+HTTP/1.1 200 OK
+Content-Type: text/html
+Cache-Control: no-store
+Date: Sun, 08 Nov 2026 10:08:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
